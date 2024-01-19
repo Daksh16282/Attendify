@@ -256,7 +256,7 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.ViewHold
                     }
                 }
                 if(!flaga){
-                    dateHelper.getDateDao().insertDate(new DateSet(dataSet.get(position).getSubject(),LocalDate.now(),1,0));
+                    dateHelper.getDateDao().insertDate(new DateSet(dataSet.get(position).getSubject(),LocalDate.now(),0,1));
                     flaga=false;
                 }
             }
